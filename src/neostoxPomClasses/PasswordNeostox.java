@@ -18,7 +18,7 @@ public class PasswordNeostox
 		
 	//3...
 		//use a parameteric constructor with public level
-	   public PasswordNeostox (WebDriver driver)
+	   public  PasswordNeostox (WebDriver driver)
 	   {
 		   PageFactory.initElements(driver,this);
 	   }
@@ -40,7 +40,9 @@ public class PasswordNeostox
 	   }
 		
 		
-		
+		//comment 1
+	   //comment 2
+	   //comment3
 		
 		
 		
