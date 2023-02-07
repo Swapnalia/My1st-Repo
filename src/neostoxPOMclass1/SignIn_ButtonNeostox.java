@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 
 public class SignIn_ButtonNeostox 
 {
@@ -35,10 +36,12 @@ public class SignIn_ButtonNeostox
 	public void MobileNoField(String mobNum)
 	{
 		MobileNoField.sendKeys(mobNum);
+		Reporter.log("enter mobile number",true);
 	}
 	public void SignInField()
 	{
 		SignInField.click();
+		Reporter.log("clicking on sign in button",true);
 	}
 	// means instead of actual mob no.we provide parameter their...and we fetch that data from excel
 	

@@ -21,12 +21,12 @@ public class Utility
 	  // wait
 	// screenshot
 	// screll in to view
-	
+	// utility contain all general methods
 	
 	
 	public static String ReadDataFromExcel(int row,int cell) throws  IOException
 	{
-		File myfile= new File("C:\\\\Users\\\\SWAPNALI\\\\OneDrive\\\\Documents\\\\Automation\\\\Excel\\\\Book1.xlsx");
+		File myfile= new File("C:\\Users\\SWAPNALI\\OneDrive\\Documents\\Automation\\Excel\\Book1.xlsx");
 		Sheet mysheet = WorkbookFactory.create(myfile).getSheet("sheet3");
 		String value = mysheet.getRow(row).getCell(cell).getStringCellValue();
 		Reporter.log("reading data from excel row is"+row+"cell is "+cell,true);

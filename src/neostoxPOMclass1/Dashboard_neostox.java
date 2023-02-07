@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
+
+import neostoxUtility.Utility;
 
 	public class Dashboard_neostox 
 	{//find x path of popup
@@ -21,9 +24,15 @@ import org.openqa.selenium.support.PageFactory;
 		
 		}
 	//handle popup
-	public void PopupHandling() throws InterruptedException
-	{ Thread.sleep(1000);
-		ClickONPopUp.click();
+	public void PopupHandling(WebDriver driver) throws InterruptedException
+	{   Thread.sleep(500);
+		Utility.scrollIntoView(driver, ClickONPopUp);
+		ClickONPopUp .click();
+		Reporter.log("clicking on pop up ok button",true);
+		
+		
+		//Thread.sleep(1000);
+		//ClickONPopUp.click();
 	
 	}
 
@@ -47,17 +56,22 @@ import org.openqa.selenium.support.PageFactory;
 	    public void clickOnUsername()
 	    {
 	    	Textforclick.click();
+	    	Reporter.log("click on username",true);
 	    }
 	    	
-	    public void ClickOnlogout()
-	    {
+	    public void ClickOnlogout() throws InterruptedException
+	    {   Thread.sleep(1000);
 	    	logout.click();
+	    	Reporter.log("logging out from neostox",true);
+	    	Thread.sleep(1000);
 	    }
 
 		public String GetActualUserName()// writtentype string denar so aapn
 		// void chyta jagi string kel
 		{
 			String ActualUsername = Text.getText();
+			Reporter.log("getting actual username", true);
+			Reporter.log( "Actualusername"+ActualUsername+"is",true);
 			return ActualUsername;
 		}
 		

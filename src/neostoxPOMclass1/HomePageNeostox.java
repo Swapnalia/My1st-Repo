@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 
 public class HomePageNeostox 
 {
@@ -22,6 +23,7 @@ public class HomePageNeostox
 	public void ClickonSignInButton()
 	{
 		Signinbutton.click();
+		Reporter.log("clicking on sign in button ",true);
 	}
 	
 	

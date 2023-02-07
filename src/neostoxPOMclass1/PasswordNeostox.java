@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 
 public class PasswordNeostox 
 {
@@ -27,6 +28,7 @@ public class PasswordNeostox
 	   public void EnterPassword(String password)
 	   {
 		   PasswordField.sendKeys(password);
+		   Reporter.log("enter password",true);
 	   }
 	  
 	//5...
@@ -34,6 +36,7 @@ public class PasswordNeostox
 	   {
 		   Thread.sleep(1000);
 		  SigninClick.click();
+		  Reporter.log("click on signing button",true);
 	   }
 		
 		

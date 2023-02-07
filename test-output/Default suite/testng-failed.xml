@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pomClassesUsingDDF.ValidateUserpageNeostoxUSINGtestNG">
+      <class name="neostoxTESTclasses2.ValidateNeostoxLogin">
         <methods>
-          <include name="logoutFromNeostox"/>
-          <include name="ValidateNeostoxApp"/>
-          <include name="closeBrowser"/>
-          <include name="loginToNeostox"/>
-          <include name="LaunchBrowser"/>
+          <include name="ValidateUserName"/>
+          <include name="LogoutFromNeostox"/>
+          <include name="LaunchNeostox"/>
+          <include name="CloseNeostoxBrowser"/>
+          <include name="LoginToNeostox"/>
         </methods>
-      </class> <!-- pomClassesUsingDDF.ValidateUserpageNeostoxUSINGtestNG -->
+      </class> <!-- neostoxTESTclasses2.ValidateNeostoxLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
