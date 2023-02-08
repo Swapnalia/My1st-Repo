@@ -8,4 +8,10 @@ public class Class_forGit {
 
 	}
 
+	public static void f1()
+	{
+		System.out.println("added f1 for git");
+	}
+	
+	
 }
