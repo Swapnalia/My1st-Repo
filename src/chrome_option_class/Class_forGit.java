@@ -13,5 +13,9 @@ public class Class_forGit {
 		System.out.println("added f1 for git");
 	}
 	
-	
+	public static void f1(char a)
+	{
+		a='s';
+		System.out.println("added f1 for git");
+	}
 }
